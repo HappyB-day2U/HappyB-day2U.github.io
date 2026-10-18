@@ -69,7 +69,7 @@ body {
 }
 
 .cake {
-  position: absolute;
+  position: absolute  ;
   animation: cake 1s infinite;
   -webkit-animation: cake  1s infinite;
   -moz-animation: cake  1s infinite;
@@ -237,24 +237,20 @@ body {
    background-color: rgb(254, 255, 209);
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
 
-body {
-  margin: 0;
-  padding: 0 ;
-  font-family: 'Pixelify Sans', sans-serif;
+body{
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100vw;
-  min-height: 1000vh;
-  display: auto;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  z-index: -1;
   background-image:url(MBG.jpg);
-    background-repeat: no-repeat;
-    background-position: visible;
-    background-attachment: fixed ;
-    background-size: contain;
-    overflow-y: auto;
-  position: sticky;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 #birthdayText {
@@ -276,7 +272,7 @@ body {
   padding-right: 600px;
   transform: scale(1);
   z-index: 2;
-  position: fixed;
+  position: relative;
   padding-top: 50px;
 }
 
@@ -288,9 +284,9 @@ body {
 
 .gifts {
   padding-right: 800px;
-  margin-top: 250px;
+  margin-top: 300px;
   transform: scale(.8);
-  position: fixed;
+  position: absolute;
 }
 
 .gift {
@@ -306,7 +302,7 @@ body {
 }
 
 .cake {
-  position: fixed;
+  position: absolute;
   animation: cake 1s infinite;
   -webkit-animation: cake  1s infinite;
   -moz-animation: cake  1s infinite;
