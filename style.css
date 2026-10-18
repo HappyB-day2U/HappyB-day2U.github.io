@@ -69,7 +69,7 @@ body {
 }
 
 .cake {
-  position: fixed;
+  position: absolute;
   animation: cake 1s infinite;
   -webkit-animation: cake  1s infinite;
   -moz-animation: cake  1s infinite;
@@ -248,13 +248,13 @@ body {
   display: auto;
   justify-content: center;
   align-items: center;
-  background-image:url(BG.jpg);
+  background-image:url(MBG.jpg);
     background-repeat: no-repeat;
     background-position: visible;
     background-attachment: fixed ;
-    background-size: cover;
+    background-size: contain;
     overflow-y: auto;
-  position: relative;
+  position: sticky;
 }
 
 #birthdayText {
